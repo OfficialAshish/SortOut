@@ -5,9 +5,12 @@ dist/
 __init__.py
 LICENSE
 
+upx/
 __pycache__/
 object_oriented/
 
 executable/
 
 docs.md
+
+*.spec
