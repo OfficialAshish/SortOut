@@ -1,18 +1,19 @@
 build/
 dist/
+*.spec
+upx/
 
 *ign*
-__init__.py
+*test*
 LICENSE
 
-upx/
+__init__.py
 __pycache__/
 object_oriented/
-
 executable/
 
 docs.md
 
-*ign*
-
-*.spec
+*.ico
+*.txt
+*.exe
