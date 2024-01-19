@@ -1,5 +1,5 @@
  
-👉 - 🔗[Download Now (SortOut)](https://github.com/OfficialAshish/SortOut/releases/download/v1.0.0/SortOut.exe)
+👉 - 🔗[Download Now (SortOut)](https://github.com/OfficialAshish/SortOut/releases/download/v2.0/SortOut_v2.exe)
  
 🌟 **Introducing File Organizer (SortOut): Your Ultimate Solution for Tidying Up Chaos! 🌪️**
  
@@ -41,7 +41,7 @@
 
 🌐 **Where to Get File Organizer:**
 
-👉 - 🔗[Download Now](https://github.com/OfficialAshish/SortOut/releases/download/v1.0.0/SortOut.exe)
+👉 - 🔗[Download Now](https://github.com/OfficialAshish/SortOut/releases/download/v2.0/SortOut_v2.exe)
 - 🔗 Find us on [GitHub](https://github.com/OfficialAshish/SortOut)
 - 🔗 Explore on [![Download SortOut](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/sortout/files/latest/download)
 

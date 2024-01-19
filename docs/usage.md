@@ -19,7 +19,9 @@ The main window of the File Organizer provides an intuitive interface to organiz
   - **Organize by Regex**: Organize files using a regular expression pattern.
 
 - **Options**:
-  - **Folders named after common file extensions**: Create folders named after common file extensions (applies to Organize by Extensions).
+  - **Folders named after common file extensions**: Create folders named after common file extensions (applies to Organize by Extensions). 
+  - For example, if you have numerous files with extensions like .doc, .txt, .pdf, .csv, etc., create a dedicated folder for Documents to streamline and categorize them efficiently.
+
   - **Include SubFolders / Files**: Include subfolders and files during organization.
 
 - **Advanced Options (based on selected algorithm)**:
