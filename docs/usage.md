@@ -17,6 +17,8 @@ The main window of the File Organizer provides an intuitive interface to organiz
   - **Organize by Extensions**: Organize files based on their extensions.
   - **Group Similar**: Group similar files together.
   - **Organize by Regex**: Organize files using a regular expression pattern.
+  -
+  - **(Note)** (Group Similar is Not suitable for a large number of files; choose "Organize by Extensions" if dealing with a large number of files)
 
 - **Options**:
   - **Folders named after common file extensions**: Create folders named after common file extensions (applies to Organize by Extensions). 
@@ -45,6 +47,10 @@ After clicking **Organize Files**, a new window will appear, displaying the prop
 ### Reverting Changes
 
 If you want to revert the changes made by the File Organizer, go to **File > Revert Changes**. Select the directory for reverting its structure, and the changes will be reverted (make sure 'revert_info.json' exists in the directory).
+
+### Create .ignore file
+
+To Create empty .ignore file:Go to **File > Create .ignore file** Use this option to create or update a .ignore file with patterns to exclude specific files or directories from organization.
 
 ## Troubleshooting
 
