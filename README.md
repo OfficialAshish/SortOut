@@ -42,6 +42,10 @@ SortOut offers tailored algorithms to meet your unique requirements:
 
 - **(Note)** (Group Similar is Not suitable for a large number of files; choose "Organize by Extensions" if dealing with a large number of files)
 
+[![Watch the video](https://img.youtube.com/vi/Pg_s4ZZMXcE/hqdefault.jpg)](https://youtu.be/Pg_s4ZZMXcE)
+
+[Watch SortOut in Action](https://www.youtube.com/watch?v=GnJ1nu9HKvw)
+
 ## 📈 Performance:
 
 SortOut is engineered for exceptional performance, offering:
