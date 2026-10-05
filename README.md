@@ -1,71 +1,48 @@
+👉 **[Download SortOut 2.0 (Windows, SortOut.exe)](https://github.com/OfficialAshish/SortOut/raw/main/executable/dist/SortOut.exe)**
 
+# SortOut 2.0 — Smart File Organizer for Windows
 
-👉 **[Download Now (SortOut)](https://github.com/OfficialAshish/SortOut/releases/download/v3.0/SortOut.exe)**
+Turn a messy folder into a tidy one: **pick an algorithm → preview → apply**,
+and undo with one click if you change your mind.
 
-# 🌟 Introducing File Organizer (SortOut): Your Ultimate Solution for Tidying Up Chaos! 🌪️
+## What's new in 2.0
+- **10 ways to organise**
+  - Free: By File Type · Smart Name Grouping · Date Organizer · By File Size ·
+    Keyword Tagger · Custom Pattern · Move All Together
+  - Pro: Duplicate Finder · Project / Code Detector · AI Grouping (OpenAI,
+    Gemini or fully-offline Ollama)
+- **Preview everything first**: a folder tree with sizes, search filter, inline
+  rename and a stats bar. Pro results can be previewed for free.
+- **Safe by default**: copies (not moves) unless you choose otherwise; exact
+  one-click **Revert**; **View History** with per-run undo.
+- **Profiles**: 📸 Photos & Media, 💻 Developer Workspace, 📥 Downloads Cleanup —
+  or save your own.
+- **`.sortout-ignore`** rules to skip files/folders, **dark mode**, and a full
+  **command line** (`SortOut.exe --help`).
 
-SortOut is a powerful Python-based file organizer designed to streamline your workflow and bring order to your digital chaos.
+Free vs Pro, how to buy and privacy: **[docs/FREEMIUM.md](docs/FREEMIUM.md)**.
 
-## 📁 Main Features:
+## Install
+1. Download `SortOut.exe` (no installer needed) and double-click it.
+2. Windows SmartScreen may warn about an unrecognised app: click
+   **More info → Run anyway**.
 
-- **User-Friendly GUI:** Navigate seamlessly through the graphical interface, designed to be user-friendly and accessible to users of all proficiency levels.
+SHA256 of `SortOut.exe` 2.0.0: `BEA01A31815CFE2FCBB02B5F71F48207E83A0A9FB83D9BEECD547CCB349596DE`
+(check with `Get-FileHash SortOut.exe`).
 
-- **Advanced Filtering Options:** Fine-tune your organization with advanced filtering. Choose to create miscellaneous folders for unrecognized files or opt for a more streamlined organizational process.
+Settings, history and logs are stored in `%USERPROFILE%\.sortout\`.
 
-- **.ignore File Integration:** Leverage the functionality reminiscent of .gitignore to exclude specific folders and files from the organization process. Create and manage .ignore files seamlessly via the menubar, enhancing the granularity of control over file organization.
+## Command line (optional)
+```powershell
+SortOut.exe "C:\Users\me\Downloads" --dry-run | Out-Host          # preview as JSON
+SortOut.exe D:\Photos -a date_organizer --granularity year -y | Out-Host
+SortOut.exe --revert "D:\Photos\SortedOut" -y | Out-Host           # undo
+```
+(SortOut.exe is a windowed app — pipe to `Out-Host` in PowerShell, or use
+`start /wait` in cmd, so the shell waits for it.) Exit codes: 0 ok, 1 error,
+3 Pro required.
 
-- **Flexible Subfolder Handling:** Enjoy the flexibility of including or excluding subfolders and files during the organization process. Your workflow, your rules. Choose between moving or copying files, giving you flexibility and control.
+## Support
+Feedback and licence questions: aashish06327@gmail.com
 
-- **Fine-Tune Organization with Thresholds:** Customize your organization with adjustable thresholds for the "Group Similar" algorithm, ensuring precision in categorization.
-
-- **Revert Changes with Ease:** Accidentally made changes you want to undo? File Organizer's built-in revert feature allows you to seamlessly roll back alterations, ensuring the integrity of your file system remains intact.
-
-- **Multi-Threading Capability:** SortOut is optimized for performance with multi-threading capability, allowing for efficient processing of files and folders.
-
-- **Effective Error Handling:** Robust error handling management ensures smooth operation even in the presence of unexpected issues, providing a reliable user experience.
-
-- **Thorough Cleanup:** SortOut ensures thorough cleanup of every object after processing, maintaining system cleanliness and efficiency.
-
-- **No Limits on File/Folder Size or Count:** SortOut imposes no restrictions on the size or count of files and folders, ensuring compatibility with projects of any scale.
-
-## 📂 Algorithms for Precision:
-
-SortOut offers tailored algorithms to meet your unique requirements:
-
-1. **Organize by Extensions:** Categorize your files effortlessly based on their extensions.
-
-2. **Group Similar:** Intelligently group related files for a streamlined directory structure.
-
-3. **Organize by Regex:** Harness the power of regular expressions for advanced file sorting.
-
-4. **None:** Enable users to exclude files and folders without applying any specific algorithm using the .ignore file.
-
-- **(Note)** (Group Similar is Not suitable for a large number of files; choose "Organize by Extensions" if dealing with a large number of files)
-
-[![Watch the video](https://img.youtube.com/vi/Pg_s4ZZMXcE/hqdefault.jpg)](https://youtu.be/Pg_s4ZZMXcE)
-
-[Watch SortOut in Action](https://www.youtube.com/watch?v=GnJ1nu9HKvw)
-
-## 📈 Performance:
-
-SortOut is engineered for exceptional performance, offering:
-
-- **Speed:** Take advantage of blazing-fast file organization, thanks to optimized algorithms and efficient multi-threading.
-- **Scalability:** Whether you're organizing a few files or managing a large directory structure, SortOut scales seamlessly to meet your needs.
-- **Reliability:** With robust error handling and thorough cleanup processes, SortOut delivers reliable performance in any scenario.
-
-
-
-## 🌐 Where to Get File Organizer:
-
-👉 **[Download Now](https://github.com/OfficialAshish/SortOut/releases/download/v3.0/SortOut.exe)**
-
-🔗 Checkout latest release [SortOut v3.0](https://github.com/OfficialAshish/SortOut/releases/tag/v3.0)  
-
-🔗 Find us on [GitHub](https://github.com/OfficialAshish/SortOut) to contribute, report issues, or suggest new features.
-
-🔗 Explore and download on [SourceForge](https://sourceforge.net/projects/sortout/files/latest/download) for alternative distribution options.
-
----
-
-Feel free to download SortOut and experience the joy of organized files with unmatched performance!
+© 2026 OfficialAshish. All rights reserved. SortOut is proprietary software.
