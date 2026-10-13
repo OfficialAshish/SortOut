@@ -1,6 +1,6 @@
 # SortOut — Free vs Pro
 
-SortOut is free to use. **SortOut Pro** unlocks three advanced algorithms.
+SortOut is free to use. **SortOut Pro** unlocks two advanced algorithms.
 Every algorithm can be **previewed for free** — Pro is only needed to *apply*
 a Pro plan, so you see exactly what you are paying for (try before you buy).
 
@@ -11,24 +11,31 @@ a Pro plan, so you see exactly what you are paying for (try before you buy).
 | By File Type · Smart Name Grouping · Custom Pattern · Move All Together | ✅ | ✅ |
 | Date Organizer · By File Size · Keyword Tagger | ✅ | ✅ |
 | Preview (scan + proposed tree) of **every** algorithm | ✅ | ✅ |
-| Duplicate Finder — byte-identical sets, recoverable space, never deletes | 👀 preview | ✅ |
-| Project / Code Detector — whole projects moved intact, grouped by language | 👀 preview | ✅ |
-| AI Grouping — OpenAI / Gemini / local Ollama | 👀 preview | ✅ |
-| Profiles (3 built-in + your own) | ✅ | ✅ |
+| Duplicate Finder — byte-identical sets, review, copies to the Recycle Bin (undoable) | 👀 preview | ✅ |
+| AI Grouping — OpenAI / Gemini / Claude / custom compatible services / local Ollama | 👀 preview | ✅ |
+| Profiles (2 built-in + your own) | ✅ | ✅ |
 | One-click Undo + History with per-run revert | ✅ | ✅ |
 | Inline folder rename, filter, stats bar, Edit as JSON | ✅ | ✅ |
 | Dark mode, remembered windows and settings | ✅ | ✅ |
 | `.sortout-ignore` rules | ✅ | ✅ |
 | Command line incl. `--dry-run` JSON | ✅ | ✅ |
 
+Project / Code Detector and Developer Workspace are **parked for a future release**
+and are not available in this release. Existing custom profiles for the parked
+algorithm are preserved on disk but hidden from the selectable profile list.
+
 Pro algorithms are marked 🔒 in the algorithm list while you're on Free.
 
 ## Try before you buy
-Pick a 🔒 algorithm and click **Scan & Preview**. The proposal window shows the
-real plan behind a blur with a summary of what was found — e.g. *"You found 12
-duplicates — 1.4 GB recoverable"*, *"Found 5 projects"* or *"AI created 8
-groups for 240 files"*. **Apply Changes** needs Pro. On the command line, `--dry-run` works for every
-algorithm; applying a Pro algorithm without a licence exits with code `3`.
+Duplicate Finder opens a review of the matching files for free; choosing and
+inspecting copies does not require Pro. Sending the extra copies to the Recycle
+Bin requires Pro and confirmation. AI Grouping can also be previewed for free;
+applying its proposed grouping requires Pro. The ordinary organizing algorithms
+remain free to scan, preview and apply.
+
+On the command line, `--dry-run` works for every available algorithm. Applying a
+Pro algorithm without a licence exits with code `3`. Project / Code Detector is
+parked, not a Pro option in this release.
 
 ## How to buy and activate
 1. Open **Help → Enter License Key…** and click **Copy** next to your
