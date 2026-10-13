@@ -9,7 +9,7 @@ a Pro plan, so you see exactly what you are paying for (try before you buy).
 | Feature | Free | Pro |
 |---|:---:|:---:|
 | By File Type · Smart Name Grouping · Custom Pattern · Move All Together | ✅ | ✅ |
-| Date Organizer · By File Size · Keyword Tagger | ✅ | ✅ |
+| Smart Rules · Date Organizer · By File Size · Keyword Tagger | ✅ | ✅ |
 | Preview (scan + proposed tree) of **every** algorithm | ✅ | ✅ |
 | Duplicate Finder — byte-identical sets, review, copies to the Recycle Bin (undoable) | 👀 preview | ✅ |
 | AI Grouping — OpenAI / Gemini / Claude / custom compatible services / local Ollama | 👀 preview | ✅ |
@@ -36,6 +36,20 @@ remain free to scan, preview and apply.
 On the command line, `--dry-run` works for every available algorithm. Applying a
 Pro algorithm without a licence exits with code `3`. Project / Code Detector is
 parked, not a Pro option in this release.
+
+## New: your rules, without a subscription
+**Smart Rules is Free** to scan, edit, preview and apply. Build ordered conditions
+using file type, name, relative path, size or days since modified. Starter presets
+cover downloads, office files and large/old files. First match wins; unmatched
+files stay put. Save rules in a profile or import/export them as JSON. Rules run
+offline and never read file contents; no background watcher silently moves files.
+
+Repeat Duplicate Finder scans can reuse full hashes from a bounded local cache.
+Fresh file identity/change stamps and head/tail samples are required for a hit;
+unsupported storage or cache problems fall back to fresh hashing. Cleanup always
+rechecks full contents before binning. Disable or clear the cache in Settings →
+Organizing, or with `--no-scan-cache` / `--clear-scan-cache`. Scanning every folder
+and checking current metadata still takes time; the cache is not an instant scan.
 
 ## How to buy and activate
 1. Open **Help → Enter License Key…** and click **Copy** next to your
@@ -64,3 +78,7 @@ a new PC? Contact support with your old and new Machine IDs.
 - AI Grouping sends **file names only** (never contents) to the cloud provider
   you choose, after asking for your consent — or nothing leaves your PC when
   you use local Ollama.
+
+- The optional duplicate-hash cache is local and bounded (20,000 entries / 7-day
+  validity). It stores hashed path keys, signatures and digests, not plaintext
+  paths or file contents. Clearing it does not remove source files or Undo data.
