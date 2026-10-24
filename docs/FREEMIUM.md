@@ -51,34 +51,41 @@ rechecks full contents before binning. Disable or clear the cache in Settings �
 Organizing, or with `--no-scan-cache` / `--clear-scan-cache`. Scanning every folder
 and checking current metadata still takes time; the cache is not an instant scan.
 
-## How to buy and activate
-1. Open **Help → Enter License Key…** and click **Copy** next to your
-   **Machine ID** (or run `SortOut-cli.exe --machine-id`).
-2. Click **Get SortOut Pro** (header button or Help menu). It opens the store
-   page — include your Machine ID with the order.
-3. You receive a key like `SORTOUT-PRO-ABCD2345`. Paste it into
-   **Help → Enter License Key… → Activate** (or run
-   `SortOut-cli.exe --license-key SORTOUT-PRO-ABCD2345`).
-   Pro unlocks immediately — no restart; the header badge changes to **PRO**.
+## Pro checkout status
+New purchases are **not open**. Do not send payment or a machine ID to an
+unverified storefront. Hosted checkout and automatic email licence delivery are
+planned, not connected in this build. A merchant-generated key is not currently
+a SortOut-compatible activation key.
 
-Keys are case- and space-insensitive and are bound to one computer. Moving to
-a new PC? Contact support with your old and new Machine IDs.
+Existing privately issued SortOut keys can still be activated in **Help → Enter
+License Key…**, or with `SortOut-cli.exe --license-key YOUR_KEY`. The current
+legacy offline keys are machine-bound; use the Machine ID only when support asks
+for it. New checkout should not require customers to type a Machine ID.
 
 ## Offline behaviour
-- Activation first asks the licence server (3-second timeout). If it can't be
-  reached, the key is checked offline, so activation works without internet.
+- No online licensing endpoint is configured by default; legacy keys are checked
+  offline. A deliberately configured HTTPS validator is tried first (3-second
+  timeout), with offline fallback only when a definitive verdict is unavailable.
 - The result is cached for 24 hours. After that SortOut re-checks **in the
   background** — startup never waits for the network. If you're offline and
   the key is still valid for this machine, Pro stays active.
 - Typing a wrong key never removes a licence that is already active.
 
 ## Privacy
-- No telemetry. Activation sends only the key, the Machine ID (an anonymous
-  hash), the product name and the version.
-- AI Grouping sends **file names only** (never contents) to the cloud provider
-  you choose, after asking for your consent — or nothing leaves your PC when
-  you use local Ollama.
+File organization and duplicate hashing run locally. There is no built-in
+advertising or usage telemetry. Local settings, logs, plans and Undo records can
+contain file names/paths and are not all encrypted.
 
-- The optional duplicate-hash cache is local and bounded (20,000 entries / 7-day
-  validity). It stores hashed path keys, signatures and digests, not plaintext
-  paths or file contents. Clearing it does not remove source files or Undo data.
+Online licence validation can send the key, app-derived machine identifier,
+product and version to the configured endpoint; the endpoint also sees network
+metadata such as IP address. A hashed identifier is not guaranteed anonymous.
+
+Cloud AI can send names, relative paths, instructions and refinement plan labels
+to the chosen provider after consent. File contents are not sent by the current
+AI pipeline. Local Ollama stays on the computer only when its configured endpoint
+is local and cloud fallback is not used. See the in-app privacy review draft for
+full implementation details; the legal documents are not final purchase terms.
+
+The optional duplicate cache is bounded (20,000 entries / 7-day validity), stores
+hashed path keys/signatures/digests rather than plaintext paths or file contents,
+and can be cleared without removing source files or Undo data.
