@@ -17,10 +17,10 @@ GitHub stores the source; do **not** use GitHub Pages for this commercial-primar
 https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits
 
 ## Release enablement
-Download actions intentionally stay disabled until a Windows candidate has passed
-package checks and a matching public release with hashes and Qt source archive exists.
-Then replace disabled buttons with links to that specific, immutable release's
-installer and portable ZIP and update the validation copy. Do not link old PyQt builds.
+Download actions link to the immutable [v2.3.1-qt6-preview](https://github.com/OfficialAshish/SortOut/releases/tag/v2.3.1-qt6-preview) Free preview.
+Windows tests and package checks passed; hashes, notices and corresponding Qt
+source archive are on the same release. New releases must pass the same gates
+before links change. Do not point to an unverified latest-build URL or old PyQt binaries.
 
 ## Paid sales gate
 Checkout is not connected. Start with one approved Lemon Squeezy merchant account,

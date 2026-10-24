@@ -7,10 +7,11 @@ requires Pro. Project / Code Detector is parked for a future release.
 
 ## Qt6 download status
 
-A PySide6 / Qt6 Windows candidate is being validated. **Do not use the previous
-PyQt-based downloads as a legally cleared replacement.** New binaries will be
-linked in Releases only after the package checks complete. This is not a paid
-commercial launch or Microsoft Store approval.
+[Download SortOut 2.3.1 — Qt6 Free preview](https://github.com/OfficialAshish/SortOut/releases/tag/v2.3.1-qt6-preview).
+Windows x64: choose **SortOut-2.3.1-Setup.exe** or **SortOut-Portable-Windows.zip**.
+This is a tested direct-download preview, **not a paid commercial launch or
+Microsoft Store approval**. Historical PyQt-based packages are not the current
+recommended downloads; migration does not retroactively clear their licensing.
 
 The new distribution offers:
 - **Offline per-user installer:** no administrator permission intended; includes
