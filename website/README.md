@@ -12,8 +12,7 @@ Serve this directory directly. Application source code is not included or licens
    Build output directory: `.`. No environment variables or secrets required.
 4. Deploy to the supplied `*.pages.dev` address; no paid domain required.
 5. Check mobile layout, project links, contact address and download status.
-6. Send the resulting public `https://<project>.pages.dev` URL so app/site references
-   can be updated without inventing an address. Subsequent pushes to main deploy
+6. Production: https://sortout-8sb.pages.dev/ . Subsequent pushes to main deploy
    the website automatically. No Cloudflare token is needed in the repository.
 
 The installer and portable ZIP stay on GitHub Releases. Do not upload them into
@@ -43,3 +42,19 @@ Never put merchant API credentials, signing secrets or mail credentials in HTML/
 Use hosted checkout and signed/verified server-side webhooks if adding fulfilment.
 No tracking or payment form is included here. Hosting request logs remain the
 hosting provider's responsibility and must be reflected in final privacy disclosures.
+
+## Product tour and marketing assets
+The page documents all ten active algorithms from the app registry, with explicit
+Free versus Pro boundaries, five actual Qt screenshots using disposable sample
+files, profiles/preview/History/CLI options, privacy boundaries and release limits.
+Screenshots are clickable at full size. No fabricated testimonials or timing claims.
+Light/dark appearance follows the device; mobile layout has no horizontal scrolling.
+
+`assets/sortout-cover.png` is the 1280 × 720 social sharing cover. Website-only
+changes do not require a new executable release. Keep release links versioned.
+After pushing public `main`, verify the production HTML and assets match the new
+commit instead of assuming a successful Git push proves a deployment.
+
+Paid checkout stays disabled until merchant key activation, delivery and revocation
+are tested and seller/legal gates are completed. Gumroad draft copy is kept in the
+private source repo at `docs/GUMROAD-LISTING-DRAFT.md`, not published as live terms.

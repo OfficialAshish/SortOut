@@ -58,3 +58,6 @@ package identity, certification and licensing review.
 Support: ashish06327@gmail.com · Project location: Pune, Maharashtra, India.
 SortOut is a product/trading label, not a claim of an incorporated company.
 Third-party component rights remain governed by their own licences.
+
+## Product tour
+Explore all ten active algorithms, actual application screenshots and the Free/Pro comparison at https://sortout-8sb.pages.dev/ . Site source lives in `website/`; Cloudflare Pages deploys public `main` automatically. Paid checkout remains disabled pending activation and seller/legal readiness.
